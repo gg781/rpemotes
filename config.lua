@@ -7,9 +7,9 @@ Config = {
     -- Thank you to those who provided translations.
     -- If you would like to provide translations or help fix them, join our Discord!
     -- Check languages code below to change the MenuLanguage
-    MenuLanguage = 'en',
+    MenuLanguage = 'zhcn',
     -- Set this to true to enable some extra prints
-    DebugDisplay = false,
+    DebugDisplay = true,
     -- Set this to false if you have something else on X, and then just use /e c to cancel emotes.
     EnableXtoCancel = true,
     CancelEmoteKey = 'x', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
@@ -23,27 +23,27 @@ Config = {
     MenuKeybindEnabled = true,
     MenuKeybind = 'f4', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
     -- You can disable the Favorite emote keybinding here.
-    FavKeybindEnabled = true,
+    FavKeybindEnabled = false,
     FavKeybind = 'capital', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
     -- You can change the header image for the menu here
     -- Use a 512 x 128 image!
     -- Note this might cause an issue of the image getting stuck on peoples screens
-    CustomMenuEnabled = true,
+    CustomMenuEnabled = false,
     MenuImage = "https://i.giphy.com/media/ldgXxQ6pJ23yh6Lvjd/giphy.gif", ----[Custom banner IMGUR or GIPHY URLs go here ]---
     -- You can change the menu image by pasting a link above. It must be the same width and length
     -- You can change the name of the menu here or leave it blank to remove the text in front of the custom banners
-    MenuTitle = "",
+    MenuTitle = "(　· 3·)",
     -- You can change the menu position here
     MenuPosition = "right", -- (left, right)
     -- You can enable or disable the Ragdoll keybinding here.
-    RagdollEnabled = false,
+    RagdollEnabled = true,
     RagdollKeybind = 'u', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
     -- You can enable or disable Ragdoll as Toggle here. Only works if RagdollEnabled is set to true.
     RagdollAsToggle = true,
     -- You can disable the Facial Expressions menu here.
     ExpressionsEnabled = true,
     -- Saves expression style to client and applies them on joining
-    PersistentExpression = true,
+    PersistentExpression = false,
     -- You can disable the Walking Styles menu here.
     WalkingStylesEnabled = true,
     -- Saves walk styles to client and applies them periodically
@@ -87,7 +87,7 @@ Config = {
     -- If turned on, playing an emote will cancel the previous one.
     CancelPreviousEmote = false,
     -- If turned off, opening the menu and playing an emote will not be possible while swimming
-    AllowInWater = true,
+    AllowInWater = false,
     -- If set to true, the /binoculars command will be enabled.
     BinocularsEnabled = true,
     -- If set to true, you'll be able to toggle between different vision modes in the binoculars
