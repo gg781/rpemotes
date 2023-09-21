@@ -9379,6 +9379,15 @@ RP.Emotes = {
             EmoteDuration = 1480
         }
     },
+    ["hideback"] = {
+        "fin_a_int-3",
+        "player_one_dual-3",
+        "Hide a gun",
+        AnimationOptions = {
+            EmoteMoving = true,
+            EmoteLoop = true
+        }
+    },
 }
 
 --- PROP EMOTES GO HERE. CURRENTLY SUPPORTS UP TO 2 PROPS  ---
@@ -10618,7 +10627,7 @@ RP.PropEmotes = {
                 0.0
             },
             EmoteLoop = true,
-            EmoteMoving = false
+            EmoteMoving = true
         }
     },
     ["whiskeyb2"] = {
@@ -10867,6 +10876,24 @@ RP.PropEmotes = {
             EmoteMoving = true
         }
     },
+    ["bagel"] = {
+        "mp_player_inteat@burger",
+        "mp_player_int_eat_burger",
+        "Bagel",
+        AnimationOptions = {
+            Prop = 'p_ing_bagel_01',
+            PropBone = 18905,
+            PropPlacement = {
+                0.14,
+                0.05,
+                0.03,
+              145.3975,
+              -53.8984,
+                4.8412
+            },
+            EmoteMoving = true
+        }
+    },
     ["donut"] = {
         "mp_player_inteat@burger",
         "mp_player_int_eat_burger",
@@ -11062,6 +11089,158 @@ RP.PropEmotes = {
                 146.0,
                 -5.0
             },
+            EmoteMoving = true
+        }
+    },
+    ["meat"] = {
+        "move_crouch_proto",
+        "idle",
+        "Meat On A Stick",
+        AnimationOptions = {
+            Prop = 'bzzz_camp_stick_kebab',
+            PropBone = 64080,
+            PropPlacement = {
+               0.0600,
+               0.0500,
+              -0.1600,
+              17.0651,
+             -30.9089,
+              60.0374
+            },
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["meat2"] = {
+        "mp_player_inteat@burger",
+        "mp_player_int_eat_burger",
+        "Meat On A Fork",
+        AnimationOptions = {
+            Prop = 'bzzz_camp_food_kebab',
+            PropBone = 18905,
+            PropPlacement = {
+               0.14,
+               0.02,
+               0.01,
+             -24.0,
+             -80.0,
+               9.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["mallow"] = {
+        "move_crouch_proto",
+        "idle",
+        "Marshmallow Stick - White",
+        AnimationOptions = {
+            Prop = 'bzzz_camp_stick_marshmallow',
+            PropBone = 64080,
+            PropPlacement = {
+               0.0600,
+               0.0500,
+              -0.1600,
+              17.0651,
+             -30.9089,
+              60.0374
+            },
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["mallow2"] = {
+        "move_crouch_proto",
+        "idle",
+        "Marshmallow Stick - Pink",
+        AnimationOptions = {
+            Prop = 'bzzz_camp_stick_mellopink',
+            PropBone = 64080,
+            PropPlacement = {
+               0.0600,
+               0.0500,
+              -0.1600,
+              17.0651,
+             -30.9089,
+              60.0374
+            },
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["mallow3"] = {
+        "move_crouch_proto",
+        "idle",
+        "Marshmallow Stick - Burnt",
+        AnimationOptions = {
+            Prop = 'bzzz_camp_stick_melloburnt',
+            PropBone = 64080,
+            PropPlacement = {
+               0.0600,
+               0.0500,
+              -0.1600,
+              17.0651,
+             -30.9089,
+              60.0374
+            },
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["mallow4"] = {
+        "mp_player_inteat@burger",
+        "mp_player_int_eat_burger",
+        "Marshmallow On A Fork - White",
+        AnimationOptions = {
+            Prop = 'bzzz_camp_food_marshmallow',
+            PropBone = 18905,
+            PropPlacement = {
+               0.14,
+               0.02,
+               0.01,
+             -24.0,
+             -80.0,
+               9.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["mallow5"] = {
+        "mp_player_inteat@burger",
+        "mp_player_int_eat_burger",
+        "Marshmallow On A Fork - Pink",
+        AnimationOptions = {
+            Prop = 'bzzz_camp_food_mellopink',
+            PropBone = 18905,
+            PropPlacement = {
+               0.14,
+               0.02,
+               0.01,
+             -24.0,
+             -80.0,
+               9.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["mallow6"] = {
+        "mp_player_inteat@burger",
+        "mp_player_int_eat_burger",
+        "Marshmallow On A Fork - Burnt",
+        AnimationOptions = {
+            Prop = 'bzzz_camp_food_melloburnt',
+            PropBone = 18905,
+            PropPlacement = {
+               0.14,
+               0.02,
+               0.01,
+             -24.0,
+             -80.0,
+               9.0
+            },
+            EmoteLoop = true,
             EmoteMoving = true
         }
     },
@@ -12881,6 +13060,82 @@ RP.PropEmotes = {
             EmoteLoop = true
         }
     },
+    ["guitar3"] = {
+        "amb@world_human_musician@guitar@male@idle_a",
+        "idle_b",
+        "Guitar 3 - Pink",
+        AnimationOptions = {
+            Prop = 'prop_tay_guitar_001',
+            PropBone = 24818,
+            PropPlacement = {
+                -0.1,
+                0.31,
+                0.1,
+                0.0,
+                20.0,
+                150.0
+            },
+            EmoteMoving = true,
+            EmoteLoop = true
+        }
+    },
+    ["guitar4"] = {
+        "switch@trevor@guitar_beatdown",
+        "001370_02_trvs_8_guitar_beatdown_idle_busker",
+        "Guitar 4 - Pink",
+        AnimationOptions = {
+            Prop = 'prop_tay_guitar_001',
+            PropBone = 24818,
+            PropPlacement = {
+                -0.05,
+                0.31,
+                0.1,
+                0.0,
+                20.0,
+                150.0
+            },
+            EmoteMoving = true,
+            EmoteLoop = true
+        }
+    },
+    ["guitar5"] = {
+        "amb@world_human_musician@guitar@male@idle_a",
+        "idle_b",
+        "Guitar - Pride",
+        AnimationOptions = {
+            Prop = 'prop_tay_guitar_002',
+            PropBone = 24818,
+            PropPlacement = {
+                -0.1,
+                0.31,
+                0.1,
+                0.0,
+                20.0,
+                150.0
+            },
+            EmoteMoving = true,
+            EmoteLoop = true
+        }
+    },
+    ["guitar6"] = {
+        "switch@trevor@guitar_beatdown",
+        "001370_02_trvs_8_guitar_beatdown_idle_busker",
+        "Guitar - Pride 2",
+        AnimationOptions = {
+            Prop = 'prop_tay_guitar_002',
+            PropBone = 24818,
+            PropPlacement = {
+                -0.05,
+                0.31,
+                0.1,
+                0.0,
+                20.0,
+                150.0
+            },
+            EmoteMoving = true,
+            EmoteLoop = true
+        }
+    },
     ["guitarelectric"] = {
         "amb@world_human_musician@guitar@male@idle_a",
         "idle_b",
@@ -12956,8 +13211,46 @@ RP.PropEmotes = {
             EmoteLoop = true,
             EmoteMoving = true
         }
-    },
+   },
     ["guitarcarry3"] = {
+        "move_weapon@jerrycan@generic",
+        "idle",
+        "Guitar Carry Accoustic - Pink",
+        AnimationOptions = {
+            Prop = "prop_tay_guitar_001",
+            PropBone = 28422,
+            PropPlacement = {
+                0.1500,
+                -0.1400,
+                -0.0200,
+                -101.5083,
+                5.7251,
+                29.4987
+            },
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["guitarcarry4"] = {
+        "move_weapon@jerrycan@generic",
+        "idle",
+        "Guitar Carry Accoustic - Pride",
+        AnimationOptions = {
+            Prop = "prop_tay_guitar_002",
+            PropBone = 28422,
+            PropPlacement = {
+                0.1100,
+                -0.1200,
+                -0.0500,
+                -80.0000,
+                0.0,
+                21.9999
+            },
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["guitarcarry5"] = {
         "move_weapon@jerrycan@generic",
         "idle",
         "Guitar Carry Electric",
@@ -12976,7 +13269,7 @@ RP.PropEmotes = {
             EmoteMoving = true
         }
     },
-    ["guitarcarry4"] = {
+    ["guitarcarry6"] = {
         "move_weapon@jerrycan@generic",
         "idle",
         "Guitar Carry Electric 2",
@@ -12995,7 +13288,7 @@ RP.PropEmotes = {
             EmoteMoving = true
         }
     },
-    ["guitarcarry5"] = {
+    ["guitarcarry7"] = {
         "move_weapon@jerrycan@generic",
         "idle",
         "Guitar Carry Electric 3",
@@ -13014,7 +13307,7 @@ RP.PropEmotes = {
             EmoteMoving = true
         }
     },
-    ["guitarcarry6"] = {
+    ["guitarcarry8"] = {
         "move_weapon@jerrycan@generic",
         "idle",
         "Guitar Carry Electric 4",
@@ -13033,7 +13326,7 @@ RP.PropEmotes = {
             EmoteMoving = true
         }
     },
-    ["guitarcarry7"] = {
+    ["guitarcarry9"] = {
         "move_weapon@jerrycan@generic",
         "idle",
         "Guitar Carry Electric 5",
@@ -13058,6 +13351,46 @@ RP.PropEmotes = {
         "Guitar Sit And Play",
         AnimationOptions = {
             Prop = "prop_acc_guitar_01",
+            PropBone = 24818,
+            PropPlacement = {
+                -0.0510,
+                0.2770,
+                -0.0299,
+                -140.3349,
+                166.3300,
+                29.7590
+            },
+            EmoteLoop = true,
+            ExitEmote = "getup",
+            ExitEmoteType = "Exits"
+        }
+    },
+    ["guitarsit2"] = {
+        "misssnowie@gatlax",
+        "base",
+        "Guitar Sit And Play 2 - Pink",
+        AnimationOptions = {
+            Prop = "prop_tay_guitar_001",
+            PropBone = 24818,
+            PropPlacement = {
+                -0.0510,
+                0.2770,
+                -0.0299,
+                -140.3349,
+                166.3300,
+                29.7590
+            },
+            EmoteLoop = true,
+            ExitEmote = "getup",
+            ExitEmoteType = "Exits"
+        }
+    },
+    ["guitarsit3"] = {
+        "misssnowie@gatlax",
+        "base",
+        "Guitar Sit And Play 2 - Pride",
+        AnimationOptions = {
+            Prop = "prop_tay_guitar_002",
             PropBone = 24818,
             PropPlacement = {
                 -0.0510,
@@ -17898,6 +18231,82 @@ RP.PropEmotes = {
                 0.0,
                 0.0,
                 0.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ['axe'] = {
+        'rcmnigel1d',
+        'base_club_shoulder',
+        'Axe',
+        AnimationOptions = {
+            Prop = 'prop_tool_fireaxe',
+            PropBone = 18905,
+            PropPlacement = {
+                0.0800,
+                -0.2090,
+                0.0900,
+                -82.6677,
+                -141.2988,
+                12.3308
+            },
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["axe2"] = {
+        "melee@large_wpn@streamed_core",
+        "ground_attack_on_spot",
+        "Axe - Ground Impact",
+        AnimationOptions = {
+            Prop = "prop_tool_fireaxe",
+            PropBone = 57005,
+            PropPlacement = {
+                0.0160,
+               -0.3140,
+               -0.0860,
+              -97.1455,
+              165.0749,
+               13.9114,
+            },
+            EmoteLoop = true,
+            EmoteMoving = false
+        }
+    },
+    ['axe3'] = {
+        'rcmnigel1d',
+        'base_club_shoulder',
+        'Axe - Pickaxe',
+        AnimationOptions = {
+            Prop = 'prop_tool_pickaxe',
+            PropBone = 57005,
+            PropPlacement = {
+                0.0400,
+               -0.2550,
+               -0.1380,
+             -109.0238,
+              163.6144,
+               20.6091
+            },
+            EmoteLoop = true,
+            EmoteMoving = true
+        }
+    },
+    ["axe4"] = {
+        "melee@large_wpn@streamed_core",
+        "ground_attack_on_spot",
+        "Axe - Pickaxe Ground Impact",
+        AnimationOptions = {
+            Prop = "prop_tool_pickaxe",
+            PropBone = 57005,
+            PropPlacement = {
+                0.08,
+                -0.4,
+                -0.10,
+                80.0,
+                -20.0,
+                175.0,
             },
             EmoteLoop = true,
             EmoteMoving = false

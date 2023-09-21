@@ -29,6 +29,7 @@ local ExitAndPlay = false
 local EmoteCancelPlaying = false
 IsInAnimation = false
 CurrentAnimationName = nil
+CurrentTextureVariation = nil
 inHandsup = false
 
 -- Remove emotes if needed
@@ -266,10 +267,21 @@ if Config.HandsupEnabled then
         Handsup()
     end, false)
 
-    function Handsup()
+function Handsup()
+    local playerPed = PlayerPedId()
+    if not IsPedHuman(playerPed) then
+        return
+    end
+    if IsProne then
+        return
+    end
         if IsProne then
             return
         end
+        if IsProne then
+            return
+	end
+		
 
         inHandsup = not inHandsup
         if inHandsup then
@@ -279,7 +291,7 @@ if Config.HandsupEnabled then
             while not HasAnimDictLoaded(dict) do
                 Wait(0)
             end
-            TaskPlayAnim(PlayerPedId(), dict, "handsup_standing_base", 2.0, 2.0, -1, 49, 0, false, false, false)
+            TaskPlayAnim(PlayerPedId(), dict, "handsup_standing_base", 2.0, 2.0, -1, 49, 0, false, IsThisModelABike(GetEntityModel(GetVehiclePedIsIn(PlayerPedId(), false))) and 4127 or false, false)
             HandsUpLoop()
         else
             ClearPedSecondaryTask(PlayerPedId())
@@ -298,7 +310,7 @@ if Config.HandsupEnabled then
                 ClearPedSecondaryTask(PlayerPedId())
                 Wait(400)
                 DestroyAllProps()
-                OnEmotePlay(emote, emote.name)
+                OnEmotePlay(emote, emote.name, CurrentTextureVariation)
             end
         end
     end
@@ -705,6 +717,7 @@ function OnEmotePlay(EmoteName, name, textureVariation)
 
     ChosenDict, ChosenAnimation, ename = table.unpack(EmoteName)
     CurrentAnimationName = name
+    CurrentTextureVariation = textureVariation
     ChosenAnimOptions = animOption
     AnimationDuration = -1
 
@@ -911,7 +924,7 @@ function PlayExitAndEnterEmote(emoteName, name, textureVariation)
         IsInAnimation = false
         ExitAndPlay = false
         DestroyAllProps()
-        OnEmotePlay(emoteName, name, textureVariation)
+        OnEmotePlay(emoteName, name, CurrentTextureVariation)
     end
 end
 
@@ -955,6 +968,7 @@ AddEventHandler('CEventOpenDoor', function(entities, eventEntity, args)
     local emote = RP.Emotes[CurrentAnimationName]
     if not emote then
         emote = RP.PropEmotes[CurrentAnimationName]
+
     end
 
     if not emote then
@@ -965,7 +979,7 @@ AddEventHandler('CEventOpenDoor', function(entities, eventEntity, args)
 
     ClearPedTasks(PlayerPedId())
     DestroyAllProps()
-    OnEmotePlay(emote, emote.name)
+    OnEmotePlay(emote, emote.name, CurrentTextureVariation)
 end)
 
 local isBumpingPed = false
@@ -1007,5 +1021,5 @@ AddEventHandler("CEventPlayerCollisionWithPed", function()
     isBumpingPed = false
     ClearPedTasks(PlayerPedId())
     DestroyAllProps()
-    OnEmotePlay(emote, emote.name)
+    OnEmotePlay(emote, emote.name, CurrentTextureVariation )
 end)
