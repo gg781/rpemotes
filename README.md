@@ -1,3 +1,7 @@
+## This is a 1.3.5 archive of our beloved RpEmotes
+
+aka. the version before content removing due to the Cfx.re license changes
+
 # RpEmotes 🏋️
 
 RpEmotes is a community driven FiveM emote menu allowing players to express themselves in roleplay with custom animations, countless facial expressions, walkstyles and props, inspired by [DullPear](https://github.com/andristum/dpemotes).
